@@ -1,0 +1,50 @@
+#34
+print (f"please enter your number")
+num = int(input())
+if num % 2 == 1:
+  print ("The number is odd")
+else:
+  print ("The number is even")
+
+#35
+print ("Please enter the human year")
+human_year = float(input())
+if human_year <=2 and human_year >= 0:
+  dog_year = human_year * 10.5
+  print(f"The dog years is {dog_year}")
+elif human_year >2:
+  dog_year = (human_year - 2) * 4 + (10.5 * 2)
+  print (f"The dog year is {dog_year}")
+else:
+  print ("please enter your age in positive number")
+
+#36
+print ("please enter your letter")
+letter = input()
+vowel = ("a", "e", "i", "o", "u")
+if letter in vowel:
+  print ("The letter is vowel")
+elif letter in "y":
+  print ("The letter sometimes is vowel and sometimes is consonant")
+else:
+  print ("The letter is consonant")
+
+#37
+shape = ("Triangular", "quadrilateral", "Pentagon", "hexagon", "Heptagon", "Octagon", "nonagon", "Decagon")
+print ("print enter the number of sides")
+sides = int(input())
+index = sides - 3
+if sides <=10 and sides >=3:
+  print (shape[index])
+else:
+  print ("please enter the number smaller than 10 and larger or equal to 3")
+
+#48
+print ("please enter the year")
+year = int(input())
+animal = ("monkey", "rooster", "dog", "pig", "rat", "ox", "tiger", "hare", "drogen", "snake", "horse", "sheep")
+index = year % 12 
+if year >= 0:
+ print (f"Your animal is {animal[index]}")
+elif year < 0:
+  print ("please enter the positive number" )
